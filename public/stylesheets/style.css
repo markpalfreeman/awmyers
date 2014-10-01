@@ -1,8 +1,50 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/paper-dark.jpg');
+  background-repeat: repeat;
+}
+
+main {
+  color: #ECD9BC;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+
 }
+
+.title-bar {
+  background-image: url('../images/paper.jpg');
+  background-repeat: repeat-x;
+  position: absolute;
+  left: 0;
+  right: 0;
+  color: #2D261B;
+  text-align: center;
+}
+
+.title-bar:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3em;
+  padding: 1em 0;
+}
+
+
+button,
+.button {
+  background-color: #AC0635;
+  color: #ECD9BC;
+  padding: 1em;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+
