@@ -68,17 +68,27 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-image: url('../images/paper-dark.jpg');
   background-repeat: repeat;
+  padding-top: 2em;
 }
 
 main {
   color: #ECD9BC;
 }
 
-a {
-  color: #00B7FF;
-  text-decoration: none;
-
+a, a:visited {
+  color: #2D261B;
 }
+
+a:hover {
+  color: #AC0635;
+}
+
+
+
+p {
+  line-height: 1.5;
+}
+
 
 
 /* --- BUTTONS --- */
@@ -88,7 +98,7 @@ button,
   display: inline-block;
   background-color: #AC0635;
   color: #ECD9BC;
-  margin-top: 1em;
+  margin-top: 2em;
   padding: 1em;
   border-radius: 5px;
   text-transform: uppercase;
@@ -102,7 +112,6 @@ button,
   background-repeat: repeat;
   width: 100%;
   color: #2D261B;
-  margin-top: 2em;
   padding: 5%;
 }
 
@@ -112,11 +121,18 @@ button,
   padding: 1em 0;
 }
 
+nav a {
+  margin-right: 0.5em;
+}
+
+
+
 
 /* --- MAIN CONTENT --- */
 main {
   width: 90%;
   margin: 5%;
+  vertical-align: top;
 }
 
 .bio {
@@ -131,11 +147,15 @@ main {
     height: 100%;
   }
 
+  body {
+    padding-top: 5em;
+    font-size: 20px;
+  }
+
   .title-bg {
     display: inline-block;
     width: 50%;
     height: 60%;
-    margin-top: 5em;
   }
 
   main {
