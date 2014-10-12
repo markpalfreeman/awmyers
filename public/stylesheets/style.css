@@ -148,14 +148,18 @@ main {
   }
 
   body {
-    padding-top: 5em;
+    padding-top: 10%;
     font-size: 20px;
   }
 
   .title-bg {
     display: inline-block;
     width: 50%;
-    height: 60%;
+    height: 70%;
+  }
+
+  .title {
+    font-size: 8vw;
   }
 
   main {
