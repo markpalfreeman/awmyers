@@ -1,6 +1,71 @@
+/* --- XXXXX --- */
+
+/* --- XXXXX --- */
+
+
+
+
+/* --- RESET --- */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  transition: .3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* --- BASE --- */
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
   background-image: url('../images/paper-dark.jpg');
   background-repeat: repeat;
 }
@@ -15,20 +80,30 @@ a {
 
 }
 
-.title-bar {
-  background-image: url('../images/paper.jpg');
-  background-repeat: repeat-x;
-  position: absolute;
-  left: 0;
-  right: 0;
-  color: #2D261B;
-  text-align: center;
+
+/* --- BUTTONS --- */
+
+button,
+.button {
+  display: inline-block;
+  background-color: #AC0635;
+  color: #ECD9BC;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
-.title-bar:after {
-  content: '';
-  display: table;
-  clear: both;
+
+/* --- HEADER --- */
+
+.title-bg {
+  background-image: url('../images/paper.jpg');
+  background-repeat: repeat;
+  width: 100%;
+  color: #2D261B;
+  margin-top: 2em;
+  padding: 5%;
 }
 
 .title {
@@ -38,13 +113,35 @@ a {
 }
 
 
-button,
-.button {
-  background-color: #AC0635;
-  color: #ECD9BC;
-  padding: 1em;
-  border-radius: 5px;
-  text-transform: uppercase;
+/* --- MAIN CONTENT --- */
+main {
+  width: 90%;
+  margin: 5%;
+}
+
+.bio {
+
 }
 
 
+/* --- MEDIA QUERIES --- */
+
+@media screen and (min-width: 600px) {
+  html, body {
+    height: 100%;
+  }
+
+  .title-bg {
+    display: inline-block;
+    width: 50%;
+    height: 60%;
+    margin-top: 5em;
+  }
+
+  main {
+    display: inline-block;
+    margin: 0;
+    padding: 5%;
+    width: 50%;
+  }
+}
