@@ -96,6 +96,14 @@ header, .main-content, footer {
   padding: 5%;
 }
 
+main {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
 
 /* --- BUTTONS --- */
 
@@ -138,8 +146,8 @@ header {
   text-transform: uppercase;
   font-size: 3.5em;
   line-height: 1.2;
-  opacity: 0.9;
   padding: 0.5em 0;
+  opacity: 0.9;
 }
 
 nav {
@@ -148,6 +156,7 @@ nav {
   font-weight: bold;
   line-height: 1.5;
   word-wrap: break-word;
+  opacity: 0.9;
 }
 
 nav a {
@@ -156,10 +165,6 @@ nav a {
 }
 
 /* --- CONTENT --- */
-
-main {
-  width: 100%;
-}
 
 footer {
   font-size: 0.65em;
