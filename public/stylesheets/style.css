@@ -61,11 +61,11 @@ img {
 
 @font-face {
     font-family: 'Eveleth';
-    src: url('evelethregular-webfont.eot');
-    src: url('evelethregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('evelethregular-webfont.woff') format('woff'),
-         url('evelethregular-webfont.ttf') format('truetype'),
-         url('evelethregular-webfont.svg#eveleth_regularregular') format('svg');
+    src: url('../fonts/evelethregular-webfont.eot');
+    src: url('../fonts/evelethregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/evelethregular-webfont.woff') format('woff'),
+         url('../fonts/evelethregular-webfont.ttf') format('truetype'),
+         url('../fonts/evelethregular-webfont.svg#eveleth_regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
