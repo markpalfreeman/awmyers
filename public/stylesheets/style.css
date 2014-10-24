@@ -144,10 +144,11 @@ button:active,
 
 .icon {
   display: inline-block;
-  background-color: #56B9D9; /* blue */
+  background-color: #2D261B; /* dark-brown */
   border-radius: 5px;
   color: #e6e1d8;
-  padding: 0.5em 1em;
+  font-weight: bold;
+  padding: 0.4em 0.8em;
 }
 
 
@@ -184,6 +185,7 @@ nav a {
   margin-right: 1em;
 }
 
+
 /* --- CONTENT --- */
 
 footer {
@@ -194,6 +196,7 @@ footer {
 footer span {
   display: inline-block;
 }
+
 
 /* --- MEDIA QUERIES --- */
 
