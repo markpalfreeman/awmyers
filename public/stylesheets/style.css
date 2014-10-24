@@ -8,6 +8,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-size: 16px;
@@ -50,10 +54,6 @@ img {
   border: 0;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
 
 /* --- BASE --- */
 
@@ -61,11 +61,9 @@ img {
 
 @font-face {
   font-family: 'Eveleth';
-  src: url('../fonts/evelethregular-webfont.eot');
-/*  src: url('../fonts/evelethregular-webfont.eot?#iefix') format('embedded-opentype'),
+  src:
     url('../fonts/evelethregular-webfont.woff') format('woff'),
-    url('../fonts/evelethregular-webfont.ttf') format('truetype'),
-    url('../fonts/evelethregular-webfont.svg#eveleth_regularregular') format('svg');*/
+    url('../fonts/evelethregular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -82,7 +80,7 @@ body {
   color: #e6e1d8; /* off-white */
 }
 
-a, a:visited {
+a {
   color: #56B9D9; /* blue */
 }
 
@@ -95,7 +93,8 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: Eveleth;
+  font-family: Eveleth, Arial, sans-serif;
+  font-weight: normal;
 }
 
 
@@ -121,12 +120,11 @@ button,
   display: inline-block;
   background-color: #56B9D9; /* blue */
   color: #2D261B; /* dark-brown */
-  font-family: Eveleth;
+  font-family: Eveleth, Arial, sans-serif;
   letter-spacing: 0.1em;
   margin-top: 2em;
   padding: 0.75em 2em;
   border-radius: 5px;
-  text-transform: uppercase;
 }
 
 button:hover,
@@ -149,6 +147,7 @@ button:active,
   color: #e6e1d8;
   font-weight: bold;
   padding: 0.4em 0.8em;
+  opacity: 0.95;
 }
 
 
@@ -163,12 +162,11 @@ header {
 }
 
 .title {
-  text-transform: uppercase;
   font-size: 3.5em;
   line-height: 1.2;
   letter-spacing: -0.04em;
   padding: 0.5em 0;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 nav {
