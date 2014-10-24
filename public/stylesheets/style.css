@@ -68,7 +68,6 @@ img {
   font-style: normal;
 }
 
-
 body {
   font-family: 'Libre Baskerville', serif;
   background-image: url('../images/paper-dark.jpg');
@@ -124,7 +123,7 @@ button,
   letter-spacing: 0.1em;
   margin-top: 2em;
   padding: 0.75em 2em;
-  border-radius: 5px;
+  border-radius: 0.3em;
 }
 
 button:hover,
@@ -140,14 +139,65 @@ button:active,
 
 /* ICONS */
 
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('../fonts/icomoon.woff?nqru9s') format('woff'),
+    url('../fonts/icomoon.ttf?nqru9s') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .icon {
   display: inline-block;
+  width: 2em;
+  height: 2em;
+  padding-top: 0.5em;
+  text-align: center;
+  margin-right: 1em;
   background-color: #2D261B; /* dark-brown */
-  border-radius: 5px;
-  color: #e6e1d8;
-  font-weight: bold;
-  padding: 0.4em 0.8em;
+  border-radius: 0.3em;
+  color: #e6e1d8; /* off-white */
   opacity: 0.95;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: middle;
+}
+
+.icon:last-child {
+  margin-right: 0;
+}
+
+.icon:hover {
+  background-color: #56B9D9; /* blue */
+  color: #e6e1d8; /* off-white */
+}
+
+.i-twitter, .i-linkedin {
+  font-family: 'icomoon';
+}
+
+.i-medium {
+  font-family: Kameron;
+}
+
+.i-twitter:before {
+  content: "\e601";
+}
+.i-linkedin:before {
+  content: "\e600";
+}
+
+.i-medium:before {
+  color: #e6e1d8; /* off-white */
+  font-size: 1.2em;
+  content: 'M';
 }
 
 
@@ -163,7 +213,7 @@ header {
 
 .title {
   font-size: 3.5em;
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: -0.04em;
   padding: 0.5em 0;
   opacity: 0.95;
@@ -176,11 +226,6 @@ nav {
   line-height: 1.5;
   word-wrap: break-word;
   opacity: 0.9;
-}
-
-nav a {
-  display: inline-block;
-  margin-right: 1em;
 }
 
 
