@@ -168,6 +168,7 @@ button:active,
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   vertical-align: middle;
+  font-size: 1.1em;
 }
 
 .icon:last-child {
@@ -179,7 +180,7 @@ button:active,
   color: #e6e1d8; /* off-white */
 }
 
-.i-twitter, .i-linkedin {
+.i-twitter, .i-linkedin, .i-lightning {
   font-family: 'icomoon';
 }
 
@@ -188,17 +189,23 @@ button:active,
 }
 
 .i-twitter:before {
-  content: "\e601";
+  content: "\f099";
 }
 .i-linkedin:before {
-  content: "\e600";
+  content: "\f0e1";
+  margin-left: 0.1em;
+}
+.i-lightning:before {
+  content: "\f0e7";
 }
 
 .i-medium:before {
   color: #e6e1d8; /* off-white */
-  font-size: 1.2em;
   content: 'M';
+  font-size: 1.1em;
 }
+
+
 
 
 /* --- HEADER --- */
